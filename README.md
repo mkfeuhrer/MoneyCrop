@@ -1,11 +1,62 @@
 # MoneyCrop
-Money Crop is a decentralized web app based on blockchain technology which addressed the problem of corruption in intermediary stages of Supply Chain in Food and Agricultural Sector.
 
-MoneyCrop is an application which is implemented on ethereum blockchain. In India, there are a number of intermediaries in food supply chain due to which farmers are greatly effected. There is no transparency in the system and also the corrupt intermediaries steal the right of our farmers.
 
 As it is implemented on blockchain, therefore no intermediaries are involved and also the system is transparent.It is immutable and secure.
 
 Thus it overall helps in betterment of farmers.
 It aims at the evolution of a new type of supply chain management system of the crops grown by the farmer.
 
-<strong> PPT Link : </strong> https://docs.google.com/presentation/d/1VeQUXj_7vN9INPKb_JHxLcwVi-V_suGGppyxEDW6pbo/edit?usp=sharing
+<h1 align="center"> MoneyCrop - Blockchain on Agriculture Industry </h1> <br>
+
+# Table Of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Demo](#demo)
+- [Feedback](#feedback)
+- [Contributors](#contributors)
+- [Contribute](#contribute)
+- [Acknowledgement](#Acknowledgements)
+
+# Introduction
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/mkfeuhrer/MoneyCrop)
+[![GitHub Stars](https://img.shields.io/github/stars/Abhey/Vision.svg)](https://github.com/mkfeuhrer/MoneyCrop) 
+[![Current Version](https://img.shields.io/badge/version-1.1-green.svg)](https://github.com/mkfeuhrer/MoneyCrop)<br>
+
+<p>Money Crop is a decentralized web app based on blockchain technology which addressed the problem of corruption in intermediary stages of Supply Chain in Food and Agricultural Sector.<br>
+MoneyCrop is an application which is implemented on ethereum blockchain.In India, there are a number of intermediaries in food supply chain due to which farmers are greatly effected. There is no transparency in the system and also the corrupt intermediaries steal the right of our farmers.<br>
+</p>
+
+<p align="center">
+<img src = "https://raw.githubusercontent.com/mkfeuhrer/MoneyCrop/blockchain.png"/>
+</p>
+
+# Demo
+
+Link to demo video: To be Added
+
+# Feedback
+Feel free to send us feedback on [Email](mailto:mohitfeuhrer@gmail.com) or [file an issue](https://github.com/mkfeuhrer/MoneyCrop/issues).
+
+# Contributors
+
+<ul>
+  <li> <a href="https://github.com/mkfeuhrer">Mohit Khare</a></li>
+  <li> <a href="https://github.com/Abhey">Abhey Rana</a></li>
+  <li> <a href="https://github.com/nvrocks">Neeraj Verma</a></li>
+</ul>
+
+# Contribute
+
+<ul>
+  <li>Feel free to report issues and bugs.It will be helpful for future launches of application.</li>
+  <li>All Suggestions are welcome.</li>
+  <li>Fork repository and Contribute.</li>
+</ul>
+
+# Acknowledgement
+
+Thanks to [Ethereum](https://www.ethereum.org) for providing their platoform.
+Built with <strong>Love @ Rajasthan-Hackathon 4.0</strong>
+
