@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Money Crop</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6 app-name">
+				Money Crop
+			</div>
+			<div class="col-sm-6 login-signup">
+				<button class="btn btn-success">Login/Signup</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 app-about">
+				A block chain implemented for decentralized chain between the farmers and consumers
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Overlay -->
+
+	<div class="overlay-veil"></div>
+	<div class="overlay">
+		<div class="row overlay-header">
+			<div class="col-xs-6 login color-active"> 
+				<h3>Login</h3>
+			</div>
+			<div class="col-xs-6 signup ">
+				<h3>Signup</h3>
+			</div>
+		</div>
+
+		<!-- login form -->
+
+		<div class="login-form active">
+			<form>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" class="form-control" id="email">
+				</div>
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input type="password" class="form-control" id="pass">
+				</div>
+				<button type="submit" class="btn btn-primary login-form-submit">Submit</button>
+			</form>
+		</div>
+
+		<!-- signup form -->
+
+		<div class="signup-form">
+			<form>
+				<div class="form-group">
+					<input type="text" class="form-control" id="username" placeholder="Enter your name">
+				</div>
+
+				<div class="form-group">
+					
+					<input type="text" class="form-control" id="usercontact" placeholder="Contact Number">
+				</div>
+
+				<div class="form-group">
+					<select class="form-control" id="usertype">
+					  <option disabled="true" selected="true">Select User Type</option>
+				      <option>Farmer</option>
+				      <option>Transportation</option>
+				      <option>Storage</option>
+				      <option>Buyer</option>
+				 
+    				</select>
+				</div>
+
+				<div class="form-group">
+					<textarea class="form-control" id="userlocation" rows="3" placeholder="Location"></textarea>
+				</div>
+
+				<div class="form-group">
+					<input type="email" class="form-control" id="useremail" placeholder="Email">
+				</div>
+
+				<div class="form-group">
+					<input type="password" class="form-control" id="userpass" placeholder="Password">
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control" id="usercpass" placeholder="Confirm Password">
+				</div>
+				<button type="submit" onclick="addUser();" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+
+		<!-- close button -->
+
+		<div class="close-overlay">
+			<i class="fa fa-times" aria-hidden="true"></i>
+		</div>
+	</div>
+	<!-- - - - - - - - - - - - - - - - -  -->
+
+<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="./login_signup.js"></script>
+<script type="text/javascript" src="./index.js"></script>
+</body>
+</html>

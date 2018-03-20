@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <title>OpenGravier</title>
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+       
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+  </head>
+  <style>
+  body{
+    padding:0;
+    margin:0;
+  }
+  </style>
+  <body>
+    <div class="container">
+<!-- <ul class="nav nav-tabs">
+  <li class="active" id="show_order"><a href="#orders">ORDERS</a></li>
+  <li><a href="#addpost" id="add_post">ADD POST</a></li>
+    <li><a href="#showpost" id="show_post">VIEW POST</a></li>
+</ul> -->
+    <div class ="container" id="addpost">
+  <h3 class="text-primary"> ADD POST </h3>
+    <form class="horizontal" id="add_form">
+      
+  <div class="form-group">
+    <label for="capacity" class="text-danger">CAPACITY</label>
+    <input type="text" class="form-control" id="capacity" placeholder="Capacity"/>
+  </div>
+  <div class="form-group">
+    <label for="price" class="text-danger">PRICE</label>
+    <input type="number" class="form-control" id="price" placeholder="Price">
+  </div>
+  
+ 
+  <button class="btn btn-default primary" id="add_store" onclick="postTransport()">SUBMIT</button>
+</form>
+</div>
+
+  <div class ="container" id="showport">
+  <h3 class="text-primary"> VIEW POST </h3>
+    <table class="table table-responsive table-striped table-bordered">
+          <thead>
+          
+          
+     <th class="text-center text-success">TRANSPORT ID</th>     
+  <th class="text-center text-success">CAPACITY</th>
+  <th class="text-center text-success">PRICE</th>
+  <th class="text-center text-success">STATUS</th>
+          </thead>
+          <tbody id="showTransport"></tbody>
+ 
+  </table>
+
+</div>
+  <div class ="container" id="orders">
+  <h3 class="text-primary"> ORDERS </h3>
+    <table class="table table-responsive table-striped table-bordered">
+          <thead>
+  <th class="text-center text-success">CROP ID</th>
+  <th class="text-center text-success">SENDER</th>
+  <th class="text-center text-success">RECEIVER</th>
+  <th class="text-center text-success">PRICE</th>
+          </thead>
+          <tbody id="show_orders">
+            
+          </tbody>
+ 
+  </table>
+
+</div>
+
+
+</div>
+
+<!-- <div class="container" id="view_orders">
+    <table class="table table-responsive table-striped">
+
+<!---     <thead>
+        <th>Orders</th></thead>
+<tr><td><button id="store_accept" class="button">ACCEPT</button></td>
+      <td><button id="store_reach" class="button">REACHED</button></td>
+      <td><button id="store_outgoing" class="button">OUT FOR DELIVERY</button></td>
+</tr>
+-->
+<!-- <thead>
+  <th class="text-center text-success">ORDER ID</th>
+  <th class="text-center text-success">QUANTITY</th>
+  <th class="text-center text-success">OWNER NAME</th>
+  <th class="text-center text-success">RECEIVER ID</th>
+  <th class="text-center text-success">VIEW STATUS</th>
+
+</thead>
+  
+      <tbody id="transport_details">
+    
+      
+    </tbody>
+  </table>
+</div>
+
+<div class="container" id="orders">
+    <table class="table table-responsive table-striped table-bordered table-hover">
+
+-     <thead>
+        <th>Orders</th></thead>
+<tr><td><button id="store_accept" class="button">ACCEPT</button></td>
+      <td><button id="store_reach" class="button">REACHED</button></td>
+      <td><button id="store_outgoing" class="button">OUT FOR DELIVERY</button></td>
+</tr>
+
+<thead>
+  <th class="text-center text-success">ORDER ID</th>
+  <th class="text-center text-success">QUANTITY</th>
+  <th class="text-center text-success">OWNER NAME</th>
+  <th class="text-center text-success">TRANSPORT ID</th>
+  <th class="text-center text-success">VIEW STATUS</th>
+
+</thead>
+    <tbody>
+      <tr id="store_details">
+        <td id="order_id"></td>
+        <td id="quan"></td>
+        <td id="owner"></td>
+        <td id="trans"></td>
+        <td><button id="store_accept" class="button btn-success" value="ACCEPT"/>ACCEPT<button id="store_decline" class="button btn-danger" value="DECLINE"/>DECLINE</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+</div> -->
+
+<!--/div>
+ -->
+ <!-- <script>
+      $(document).ready(function() {  
+      $("#addpost").hide();
+      $("#orders").hide();
+      $("#showpost").hide();
+    
+        $("#show_order").click(function(){
+         // $("#show_orders").addClass("text-sucess");
+  $("#addpost").hide();
+      $("#orders").show();
+      $("#showpost").hide();
+        });
+        $("#show_post").click(function(){
+          //$("#show_post").addClass("text-sucess");
+  $("#addpost").hide();
+      $("#orders").hide();
+      $("#showpost").show();
+        });
+        $("#add_post").click(function(){
+         // $("#view_post").addClass("text-sucess");
+  $("#addpost").show();
+      $("#orders").hide();
+      $("#showpost").hide();
+      
+        });
+
+}); 
+    
+      </script> -->
+<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+      <script src="transportPortal.js"></script>  
+  </body>
+</html>

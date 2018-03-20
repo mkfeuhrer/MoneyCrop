@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>OpenGravier</title>
+		 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+       
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+	</head>
+
+	<style>
+	body{
+		margin-top: 30px;
+	}
+	
+	</style>
+
+	<body>
+				<div class="container">
+<ul class="nav nav-tabs">
+  <li id="view_crops" class="active"><a href="#viewcrop">VIEW CROPS</a></li>
+  <li id="view_orders"><a href="#vieworders">VIEW ORDER</a></li>
+
+</ul>
+
+<div class="container" id="viewcrop" class="panel">
+		<table class="table table-responsive table-striped table-bordered">
+          <thead>
+	<th class="text-center text-success">CROP ID</th>
+	<th class="text-center text-success">Name</th>
+	<th class="text-center text-success">Quantity</th>
+	<th class="text-center text-success">PRICE</th>
+
+          </thead>
+		<tbody id="crop_show">
+			
+			
+		</tbody>
+	</table>
+	<br/>
+	<h3 class="text-success">Place Order</h3>
+	  <input type="text" placeholder="CROP ID" class="form-control" id="cropId">
+	  <br/>
+         <input type="text" placeholder="QUANTITY" class="form-control" id="quan">
+         <br/>
+          <button id="placed_transport" class="btn-info btn" onclick="placeCropOrder()">SUBMIT</button>
+</div>
+
+<div class="container" id="vieworders" class="panel">
+		<table class="table table-responsive table-striped table-bordered">
+          <thead>
+	<th class="text-center text-success">ORDER ID</th>
+	<th class="text-center text-success">CROP ID</th>
+	<th class="text-center text-success">OWNER NAME</th>
+	<th class="text-center text-success">QUANTITY</th>
+
+          </thead>
+		<tbody id="buyer_orders">
+
+			
+		</tbody>
+	</table>
+</div>
+
+<script>
+$(document).ready(function() {  
+    	$("#viewcrop").show();
+    	$("#vieworders").hide();
+    	
+    
+        $("#view_crops").click(function(){
+        	//$("#show_orders").addClass("text-sucess");
+$("#viewcrop").show();
+    	$("#vieworders").hide();
+        });
+        $("#view_orders").click(function(){
+        	//$("#show_post").addClass("text-sucess");
+$("#vieworders").show();
+    	$("#viewcrop").hide();
+    
+        });
+        
+     
+         
+
+});
+    
+    	</script>
+<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="buyerPortal.js"></script>
+  
+	</body>
+</html>

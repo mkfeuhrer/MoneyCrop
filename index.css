@@ -1,0 +1,93 @@
+body{
+	background: url("https://wallpapercave.com/wp/YTU2KoD.jpg");
+}
+.app-name{
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 24px;
+	border-bottom: 1px solid rgba(123,222,222,1);
+	background: rgba(0,0,0,0.8);
+	color: white;
+}
+.app-about{
+	color: black;
+	font-size: 38px;
+	text-align: center;
+	height: 200px;
+	padding: 16% 0; 
+}
+.login-signup{
+	background: rgba(0,0,0,0.8);
+	border-bottom: 1px solid rgba(123,222,222,1);
+	text-align: right;
+	font-size: 24px;
+	padding: 15.8px 0;
+	padding-right: 20px;
+	color: white;
+}
+.login-signup .btn{
+	font-size: 20px;
+}
+.overlay{
+	width: 500px;
+	/*height: 600px;*/
+	padding: 0 15px;
+	box-sizing: border-box;
+	/*border-radius: 5px;*/
+	/*margin: 0 auto;*/
+	position: absolute;
+	top: 20%;
+	left: 32%;
+	background: white;
+	transition: all 1s ease;
+	z-index: 9999;
+	display: none;
+}
+.overlay-header{
+	padding-bottom: 20px;
+}
+.login, .signup{
+	padding-bottom: 10px;
+	color: rgba(118,206,144,1);
+}
+.login-form, .signup-form{
+	display: none;
+	margin-bottom: 20px;
+}
+.color-active{
+	background: rgba(118,206,144,1);
+	color: white;
+}
+.overlay-header{
+	text-align: center;
+}
+
+.login-overlay h1{
+	text-align: center;
+}
+.close-overlay{
+	position: absolute;
+	cursor: pointer;
+	top: 10px;
+	right: 10px;
+}
+.active{
+	display: block;
+}
+.overlay-veil{
+	background: rgba(255,255,255,0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: none;
+	z-index: 9999;
+}
+.btn{
+	background-color: rgba(118,206,144,1);
+}
+.btn:hover{
+	background-color: rgba(95, 170, 118,1);
+}

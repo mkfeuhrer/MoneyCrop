@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Mooney Crop</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		  <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+
+    <style type="text/css">
+      /*#intro{
+        background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTas4KNihS3LcO8FSZ-uToI3R4HoKLbv4wYqzJHFuOvg0H6MUUUMw);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }*/
+      .table-responsive{
+        margin: 0 10px;
+      }
+      #quantity, #price{
+        width: 100%;
+        background: rgba(255, 255, 255, 0.05);
+        height: 2.75em;
+        padding: 0 1em;
+        border-radius: 0.25em;
+        border: 1px solid rgba(255,255,255,0.2);
+        outline: 0;
+      }
+      .pickUp{
+        color: yellow;
+      }
+      .delivered{
+        color: rgb(89, 244, 66);
+      }
+      .onWay{
+        color: rgb(237, 80, 211);
+      }
+      #welcome
+      {
+    position: relative;
+    top: 0px;
+    left: 85%;
+    margin: 0px;
+    /*height: 108px;*/
+    /*width: 250px;*/
+    /*background: #38021fb8;*/
+    font-family: cursive;
+    letter-spacing: 1.2px;
+    word-spacing: 2px;
+    color: whitesmoke;
+    /*border-radius :20px;*/
+    z-index: 9999;
+      }
+    </style>
+	</head>
+<style>
+
+</style>
+	<body>
+
+		<!-- Sidebar -->
+    <div id="welcome">
+         WELCOME 
+    </div>
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">VIEW YOUR CROPS</a></li>
+							<li><a href="#one">ADD YOUR PRODUCTS</a></li>
+							<li><a href="#two">VIEW STORAGE</a></li>
+							<li><a href="#three">VIEW TRANSPORT</a></li>
+							<li><a href="#four">VIEW ORDERS</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Crop ID</th>
+            <th>Crop Name</th>
+            <th>Status</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody id="cropTable">
+        </tbody>
+      </table>
+    </div>
+
+			
+					</section>
+
+					<!--- add crops -->
+<section id="one" class="wrapper style1 fullscreen spotlight">
+
+		<div class="col-sm-8 col-md-6">
+ <div class="container col-sm8 col-md-6">
+    <form class="horizontal" id="add_form">
+  <div class="form-group">
+    <label for="crop_name">CROP NAMES</label>
+    <input type="text" class="form-control" id="cropname" placeholder="Crop Name"/>
+  </div>
+  <div class="form-group">
+    <label for="crop_name">Quantity</label>
+    <input type="number" class="form-control" id="quantity" placeholder="Quantity">
+  </div>
+  
+  <div class="form-group">
+    <label for="crop_name">Price</label>
+    <input type="number" class="form-control" id="price" placeholder="Price">
+  </div>
+  <button class="btn btn-default primary" id="submit">Submit</button>
+</form>
+</div>
+</div>
+</section>
+
+
+<!-- storage view -->
+<section id="two" class="wrapper style1 fullscreen spotlight">
+	<div class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+          	<th>STORAGE_ID</th>
+            <th>STORAGE OWNER</th>
+            <th>CAPACITY</th>
+            <th>PRICE</th>
+            <th>Crop id</th>
+            <th>Crop quantity</th>
+            <th>Submit</th>
+          </tr>
+        </thead>
+        <tbody id="storageTable">
+        <!-- <tr>	
+        <td id="s1">1</td><td id="s2">2</td><td id="s3">3</td><td id="s4">4</td><td>
+  
+       
+          <td>  <input type="text" placeholder="Crop Id" class="form-control" id="get_value1"></td>
+         <td> <input type="text" placeholder="Quantity" class="form-control" id="get_value2"></td>
+          <td><button id="get_value">SUBMIT</button></td>
+                                    
+        </tr>
+ -->    </tbody>     
+	</table>
+
+    </div>
+
+</section>
+
+
+<!-- TRANSPORT -->
+
+<section id="three" class="wrapper style1 fullscreen spotlight">
+<div class="container">
+<div class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+          	<th>TRANSPORT_ID</th>
+            <th>TRANSPORT OWNER</th>
+            <th>PRICE</th>
+            <th>CAPACITY</th>
+          </tr>
+        </thead>
+        <tbody id="transportTable" class="text-info">
+        	       
+ 
+        </tbody>
+      </table>
+    </div>
+    <input type="text" placeholder="Order Type" class="form-control" id="orderType">
+         <input type="text" placeholder="order Id" class="form-control" id="orderId">
+         <input type="text" placeholder="Transport Id" class="form-control" id="transportId">
+          <button id="placed_transport" onclick="placeTransportOrder()">SUBMIT</button>
+          </div>
+</section>
+
+<section id="four" class="wrapper style1 fullscreen fade-up">
+<div class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+          	<th>ORDER_ID</th>
+			      <th>CROP_ID</th>
+            <th>BUYER</th>
+            <th>QUANTITY</th>
+            <th>Status</th>
+
+          </tr>
+        </thead>
+        <tbody id="buyerOrderTable">
+        	<!-- <tr>
+        	</tr> -->
+        </tbody>
+      </table>
+    </div>
+</section>
+
+
+<footer>
+<b><center>Copyrights@MoneyCrop</center></b>
+</footer>
+
+
+<!-- <script>
+var url = window.location.href;
+// console.log(url);
+var arr = url.split('=');
+console.log(arr[1]);
+$("#submit").click(function(){
+    $.ajax({url: window.location.href, success: function(result){
+        //$("#div1").html(result);
+        console.log("works");
+    }});
+});
+</script> -->
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+  <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="./farmerPortal.js"></script>
+</html>
