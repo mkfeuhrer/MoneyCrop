@@ -7,3 +7,5 @@ As it is implemented on blockchain, therefore no intermediaries are involved and
 
 Thus it overall helps in betterment of farmers.
 It aims at the evolution of a new type of supply chain management system of the crops grown by the farmer.
+
+<strong> PPT Link : </strong> https://docs.google.com/presentation/d/1VeQUXj_7vN9INPKb_JHxLcwVi-V_suGGppyxEDW6pbo/edit?usp=sharing
