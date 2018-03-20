@@ -29,7 +29,7 @@ MoneyCrop is an application which is implemented on ethereum blockchain.In India
 </p>
 
 <p align="center">
-<img src = "https://raw.githubusercontent.com/mkfeuhrer/MoneyCrop/blockchain.png"/>
+<img src = "https://raw.githubusercontent.com/mkfeuhrer/MoneyCrop/master/blockchain.png"/>
 </p>
 
 # Demo
