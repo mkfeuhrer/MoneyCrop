@@ -21,7 +21,7 @@ It aims at the evolution of a new type of supply chain management system of the 
 # Introduction
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/mkfeuhrer/MoneyCrop)
-[![GitHub Stars](https://img.shields.io/github/stars/Abhey/Vision.svg)](https://github.com/mkfeuhrer/MoneyCrop) 
+[![GitHub Stars](https://img.shields.io/github/stars/mkfeuhrer/MoneyCrop.svg)](https://github.com/mkfeuhrer/MoneyCrop) 
 [![Current Version](https://img.shields.io/badge/version-1.1-green.svg)](https://github.com/mkfeuhrer/MoneyCrop)<br>
 
 <p>Money Crop is a decentralized web app based on blockchain technology which addressed the problem of corruption in intermediary stages of Supply Chain in Food and Agricultural Sector.<br>
