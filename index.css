@@ -1,5 +1,7 @@
 body{
-	background: url("https://wallpapercave.com/wp/YTU2KoD.jpg");
+	background: url("http://xinature.com/wp-content/uploads/2016/08/fields-nature-land-crop-harvest-skies-season-heart-farm-crops-tractor-field-rows-sky-clouds-cloud-farmland-yield-heartland-background-pictures.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .app-name{
 	float: left;
@@ -90,4 +92,9 @@ body{
 }
 .btn:hover{
 	background-color: rgba(95, 170, 118,1);
+}
+
+.heading{
+	align-content: center;
+		
 }
