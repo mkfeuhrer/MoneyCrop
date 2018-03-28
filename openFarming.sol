@@ -107,6 +107,7 @@ contract openFarming{
 	function getUserName(uint id) returns (string) {
 	    return userInfo[id].name;
 	}
+	
 	function registerMe(string name,string contact,uint userid,uint usertype,string location,string email,string pass) public returns(bool){
 		if(userIsPresent[userid] != 1)
 		{
