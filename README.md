@@ -1,5 +1,9 @@
 <h1 align="center"> MoneyCrop - Blockchain on Agriculture Industry </h1> <br>
-
+<p align="center">
+  <a href="https://github.com/mkfeuhrer/JarvisBot">
+    <img alt="" title="Money-Crop" src="https://raw.githubusercontent.com/mkfeuhrer/MoneyCrop/master/farmer.gif" width="550">
+  </a>
+</p>
 # Table Of Contents
 
 - [Introduction](#introduction)
